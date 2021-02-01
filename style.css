@@ -1,10 +1,38 @@
 * {
   padding: 0;
   margin: 0;
-  border: none;
+  box-sizing: border-box;
 }
 
-.btn {
-  width: 5vw;
-  height: 2vh;
+.text-level-game {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 5rem;
+}
+
+.game-container {
+  display: inline-block;
+  position: relative;
+}
+
+.mode-btn {
+  width: 7rem;
+  height: 4rem;
+}
+
+.image-game {
+  width: 70vw;
+}
+
+.btn-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 52vw;
+  height: 52vw;
+  border-radius: 50%;
 }

@@ -6,17 +6,47 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>OnTime</h1>
+    <h1 id="title">OnTime</h1>
 
-    <div id="txt-count">
-      Count:
-      <span id="count">0</span>
+    <h3>Game mode: <span id="game-mode-txt">easy</span></h3>
+
+    <div class="game-container">
+      <img
+        src="./assets/48tickGame.png"
+        alt="this is the game"
+        class="image-game"
+        id="image-game"
+      />
+      <div class="btn-image" onclick="handleStartGame()"></div>
+      <div class="text-level-game" id="text-level-game">1</div>
     </div>
 
-    <img src="./assets/btn.png" alt="image" class="image" id="image" />
+    <div class="mode-btn-container">
+      <button
+        id="easy-mode-btn"
+        class="mode-btn"
+        onclick="handleChangeMode('easy', ['lightcoral', 'lightgray', 'lightgray'])"
+      >
+        easy
+      </button>
+      <button
+        id="hard-mode-btn"
+        class="mode-btn"
+        onclick="handleChangeMode('hard', ['lightgray', 'lightcoral', 'lightgray'])"
+      >
+        hard
+      </button>
+      <button
+        id="impossible-mode-btn"
+        class="mode-btn"
+        onclick="handleChangeMode('impossible', ['lightgray', 'lightgray', 'lightcoral'])"
+      >
+        impossible
+      </button>
+    </div>
 
-    <button id="btn" class="btn" onclick="handleClick()">Click</button>
-
-    <script src="script.js"></script>
+    <script src="./index.js"></script>
+    <script src="./resources/gameModes/game.js"></script>
+    <script src="./resources/gameModes/easy.js"></script>
   </body>
 </html>
